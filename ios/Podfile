@@ -1,41 +1,59 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'RNFirebaseStarter' do
-  # Pods for RNFirebaseStarter
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
 
-  # Required by RNFirebase
   pod 'Firebase/Core', '~> 5.20.1'
-
-  # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
-  # pod 'Firebase/AdMob', '~> 5.20.1'
-  pod 'Firebase/Auth', '~> 5.20.1'
-  pod 'Firebase/Core', '~> 5.20.1'
-  pod 'Firebase/Database', '~> 5.20.1'
-  pod 'Firebase/Functions', '~> 5.20.1'
-  pod 'Firebase/DynamicLinks', '~> 5.20.1'
   pod 'Firebase/Firestore', '~> 5.20.1'
-  # pod 'Firebase/Invites', '~> 5.20.1'
-  pod 'Firebase/Messaging', '~> 5.20.1'
-  pod 'Firebase/RemoteConfig', '~> 5.20.1'
+  pod 'Firebase/Auth', '~> 5.20.1'
   pod 'Firebase/Storage', '~> 5.20.1'
-  pod 'Firebase/Performance', '~> 5.20.1'
+  pod 'Firebase/Messaging', '~> 5.20.1'
+  pod 'Firebase/DynamicLinks', '~> 5.20.1'
+
+  pod 'RNGoogleSignin', :path => '../node_modules/react-native-google-signin'
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    # the following ones are the ones taken from "Libraries" in Xcode:
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket'
+  ]
+
+  platform :ios, '10.0'
+  # the following dependencies are dependencies of React native itself.
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+
+  # Other deps
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+  pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  pod 'RNIap', :path => '../node_modules/react-native-iap'
+  pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
+  pod 'ReactNativeFabric', :path => '../node_modules/react-native-fabric'
   pod 'Fabric', '~> 1.9.0'
   pod 'Crashlytics', '~> 3.12.0'
+  pod 'WebEngage'
 
 end
 
-target 'RNFirebaseStarter-tvOS' do
-  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    targets_to_ignore = %w(React yoga)
 
-  # Pods for RNFirebaseStarter-tvOS
-
-  target 'RNFirebaseStarter-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
+    if targets_to_ignore.include? target.name
+      target.remove_from_project
+    end
   end
-
 end

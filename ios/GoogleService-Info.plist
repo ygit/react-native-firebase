@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>185667099094-dtmm017s2lgoohs7ln88ep7e9vmkornh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.185667099094-dtmm017s2lgoohs7ln88ep7e9vmkornh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB9W_oj8VCSi_RIpsdfGFIZUc3oq0CmzRI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>185667099094</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.RNFirebaseStarter.weg</string>
+	<key>PROJECT_ID</key>
+	<string>reactnativestarter-251cd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>reactnativestarter-251cd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:185667099094:ios:f1774c80a3cd680b</string>
+	<key>DATABASE_URL</key>
+	<string>https://reactnativestarter-251cd.firebaseio.com</string>
+</dict>
+</plist>

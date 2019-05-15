@@ -13,7 +13,15 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.3",
-    "react-native-firebase": "^5.3.1"
+    "react-native-fabric": "^0.5.2",
+    "react-native-firebase": "^5.3.1",
+    "react-native-gesture-handler": "^1.2.1",
+    "react-native-google-signin": "^2.0.0",
+    "react-native-iap": "^2.5.1",
+    "react-native-image-crop-picker": "^0.24.0",
+    "react-native-permissions": "^1.1.1",
+    "react-native-vector-icons": "^6.4.2",
+    "react-native-webengage": "^1.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
