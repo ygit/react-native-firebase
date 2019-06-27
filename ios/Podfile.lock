@@ -1,90 +1,41 @@
 PODS:
+  - Amplitude-iOS (4.6.0)
+  - Analytics (3.6.10)
   - boost-for-react-native (1.63.0)
-  - BoringSSL-GRPC (0.0.2):
-    - BoringSSL-GRPC/Implementation (= 0.0.2)
-    - BoringSSL-GRPC/Interface (= 0.0.2)
-  - BoringSSL-GRPC/Implementation (0.0.2):
-    - BoringSSL-GRPC/Interface (= 0.0.2)
-  - BoringSSL-GRPC/Interface (0.0.2)
-  - Crashlytics (3.12.0):
-    - Fabric (~> 1.9.0)
   - DoubleConversion (1.1.6)
-  - Fabric (1.9.0)
-  - Firebase/Auth (5.20.2):
+  - Firebase/Core (5.11.0):
     - Firebase/CoreOnly
-    - FirebaseAuth (= 5.4.2)
-  - Firebase/Core (5.20.2):
+    - FirebaseAnalytics (= 5.3.0)
+  - Firebase/CoreOnly (5.11.0):
+    - FirebaseCore (= 5.1.6)
+  - Firebase/Messaging (5.11.0):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (= 5.8.1)
-  - Firebase/CoreOnly (5.20.2):
-    - FirebaseCore (= 5.4.1)
-  - Firebase/DynamicLinks (5.20.2):
-    - Firebase/CoreOnly
-    - FirebaseDynamicLinks (= 3.4.3)
-  - Firebase/Firestore (5.20.2):
-    - Firebase/CoreOnly
-    - FirebaseFirestore (= 1.2.1)
-  - Firebase/Messaging (5.20.2):
-    - Firebase/CoreOnly
-    - FirebaseMessaging (= 3.5.0)
-  - Firebase/Storage (5.20.2):
-    - Firebase/CoreOnly
-    - FirebaseStorage (= 3.1.1)
-  - FirebaseAnalytics (5.8.1):
-    - FirebaseCore (~> 5.4)
-    - FirebaseInstanceID (~> 3.8)
-    - GoogleAppMeasurement (= 5.8.1)
+    - FirebaseMessaging (= 3.2.1)
+  - FirebaseAnalytics (5.3.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleAppMeasurement (~> 5.3)
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
   - FirebaseAnalyticsInterop (1.2.0)
-  - FirebaseAuth (5.4.2):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 5.2)
-    - GoogleUtilities/Environment (~> 5.2)
-    - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseAuthInterop (1.0.0)
-  - FirebaseCore (5.4.1):
-    - GoogleUtilities/Environment (~> 5.2)
+  - FirebaseCore (5.1.6):
     - GoogleUtilities/Logger (~> 5.2)
-  - FirebaseDynamicLinks (3.4.3):
-    - FirebaseAnalytics (~> 5.1)
-    - FirebaseAnalyticsInterop (~> 1.0)
-    - FirebaseCore (~> 5.2)
-  - FirebaseFirestore (1.2.1):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 5.2)
-    - FirebaseFirestore/abseil-cpp (= 1.2.1)
-    - "gRPC-C++ (= 0.0.6)"
-    - leveldb-library (~> 1.20)
-    - nanopb (~> 0.3.901)
-    - Protobuf (~> 3.1)
-  - FirebaseFirestore/abseil-cpp (1.2.1):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 5.2)
-    - "gRPC-C++ (= 0.0.6)"
-    - leveldb-library (~> 1.20)
-    - nanopb (~> 0.3.901)
-    - Protobuf (~> 3.1)
-  - FirebaseInstanceID (3.8.1):
-    - FirebaseCore (~> 5.2)
-    - GoogleUtilities/Environment (~> 5.2)
-    - GoogleUtilities/UserDefaults (~> 5.2)
-  - FirebaseMessaging (3.5.0):
-    - FirebaseAnalyticsInterop (~> 1.1)
-    - FirebaseCore (~> 5.2)
-    - FirebaseInstanceID (~> 3.6)
+  - FirebaseInstanceID (3.3.0):
+    - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.3)
-    - GoogleUtilities/Reachability (~> 5.3)
     - GoogleUtilities/UserDefaults (~> 5.3)
+  - FirebaseMessaging (3.2.1):
+    - FirebaseAnalyticsInterop (~> 1.1)
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/Reachability (~> 5.2)
     - Protobuf (~> 3.1)
-  - FirebaseStorage (3.1.1):
-    - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 5.2)
-    - GTMSessionFetcher/Core (~> 1.1)
-  - Folly (2018.10.22.00):
+  - FLAnimatedImage (1.0.12)
+  - Folly (2016.10.31.00):
     - boost-for-react-native
     - DoubleConversion
     - glog
@@ -95,18 +46,6 @@ PODS:
     - GoogleUtilities/Network (~> 5.2)
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
-  - GoogleSignIn (4.4.0):
-    - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
-    - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
-    - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/DebugUtils (2.2.0):
-    - GoogleToolboxForMac/Defines (= 2.2.0)
-  - GoogleToolboxForMac/Defines (2.2.0)
-  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
-    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
-    - GoogleToolboxForMac/Defines (= 2.2.0)
-    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
-  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
   - GoogleUtilities/AppDelegateSwizzler (5.8.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -125,175 +64,196 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.8.0):
     - GoogleUtilities/Logger
-  - "gRPC-C++ (0.0.6)":
-    - "gRPC-C++/Implementation (= 0.0.6)"
-    - "gRPC-C++/Interface (= 0.0.6)"
-  - "gRPC-C++/Implementation (0.0.6)":
-    - "gRPC-C++/Interface (= 0.0.6)"
-    - gRPC-Core (= 1.17.0)
-    - nanopb (~> 0.3)
-  - "gRPC-C++/Interface (0.0.6)"
-  - gRPC-Core (1.17.0):
-    - gRPC-Core/Implementation (= 1.17.0)
-    - gRPC-Core/Interface (= 1.17.0)
-  - gRPC-Core/Implementation (1.17.0):
-    - BoringSSL-GRPC (= 0.0.2)
-    - gRPC-Core/Interface (= 1.17.0)
-    - nanopb (~> 0.3)
-  - gRPC-Core/Interface (1.17.0)
-  - GTMSessionFetcher/Core (1.2.1)
-  - leveldb-library (1.20)
+  - libwebp (1.0.2):
+    - libwebp/core (= 1.0.2)
+    - libwebp/dec (= 1.0.2)
+    - libwebp/demux (= 1.0.2)
+    - libwebp/dsp (= 1.0.2)
+    - libwebp/enc (= 1.0.2)
+    - libwebp/mux (= 1.0.2)
+    - libwebp/utils (= 1.0.2)
+    - libwebp/webp (= 1.0.2)
+  - libwebp/core (1.0.2):
+    - libwebp/webp
+  - libwebp/dec (1.0.2):
+    - libwebp/core
+  - libwebp/demux (1.0.2):
+    - libwebp/core
+  - libwebp/dsp (1.0.2):
+    - libwebp/core
+  - libwebp/enc (1.0.2):
+    - libwebp/core
+  - libwebp/mux (1.0.2):
+    - libwebp/core
+  - libwebp/utils (1.0.2):
+    - libwebp/core
+  - libwebp/webp (1.0.2)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - Protobuf (3.7.0)
-  - QBImagePickerController (3.4.0)
-  - React (0.59.3):
-    - React/Core (= 0.59.3)
-  - React/Core (0.59.3):
-    - yoga (= 0.59.3.React)
-  - React/CxxBridge (0.59.3):
-    - Folly (= 2018.10.22.00)
+  - Protobuf (3.8.0)
+  - React (0.57.1):
+    - React/Core (= 0.57.1)
+  - react-native-fast-image (5.4.2):
+    - FLAnimatedImage (~> 1)
+    - React
+    - SDWebImage/Core (~> 4)
+    - SDWebImage/GIF (~> 4)
+    - SDWebImage/WebP (~> 4)
+  - react-native-photo-view (1.5.2):
+    - React
+  - react-native-webview (5.7.0):
+    - React
+  - React/Core (0.57.1):
+    - yoga (= 0.57.1.React)
+  - React/CxxBridge (0.57.1):
+    - Folly (= 2016.10.31.00)
     - React/Core
     - React/cxxreact
-    - React/jsiexecutor
-  - React/cxxreact (0.59.3):
+  - React/cxxreact (0.57.1):
     - boost-for-react-native (= 1.63.0)
-    - DoubleConversion
-    - Folly (= 2018.10.22.00)
-    - glog
+    - Folly (= 2016.10.31.00)
+    - React/jschelpers
     - React/jsinspector
-  - React/DevSupport (0.59.3):
+  - React/DevSupport (0.57.1):
     - React/Core
     - React/RCTWebSocket
-  - React/fishhook (0.59.3)
-  - React/jsi (0.59.3):
-    - DoubleConversion
-    - Folly (= 2018.10.22.00)
-    - glog
-  - React/jsiexecutor (0.59.3):
-    - DoubleConversion
-    - Folly (= 2018.10.22.00)
-    - glog
-    - React/cxxreact
-    - React/jsi
-  - React/jsinspector (0.59.3)
-  - React/RCTActionSheet (0.59.3):
+  - React/fishhook (0.57.1)
+  - React/jschelpers (0.57.1):
+    - Folly (= 2016.10.31.00)
+    - React/PrivateDatabase
+  - React/jsinspector (0.57.1)
+  - React/PrivateDatabase (0.57.1)
+  - React/RCTActionSheet (0.57.1):
     - React/Core
-  - React/RCTAnimation (0.59.3):
+  - React/RCTAnimation (0.57.1):
     - React/Core
-  - React/RCTBlob (0.59.3):
+  - React/RCTBlob (0.57.1):
     - React/Core
-  - React/RCTGeolocation (0.59.3):
+  - React/RCTGeolocation (0.57.1):
     - React/Core
-  - React/RCTImage (0.59.3):
+  - React/RCTImage (0.57.1):
     - React/Core
     - React/RCTNetwork
-  - React/RCTLinkingIOS (0.59.3):
+  - React/RCTNetwork (0.57.1):
     - React/Core
-  - React/RCTNetwork (0.59.3):
+  - React/RCTText (0.57.1):
     - React/Core
-  - React/RCTSettings (0.59.3):
-    - React/Core
-  - React/RCTText (0.59.3):
-    - React/Core
-  - React/RCTVibration (0.59.3):
-    - React/Core
-  - React/RCTWebSocket (0.59.3):
+  - React/RCTWebSocket (0.57.1):
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - ReactNativeFabric (0.5.2):
-    - Crashlytics
-    - Fabric
+  - RNAnalytics (0.1.0-beta.0):
+    - Analytics
     - React
-  - ReactNativePermissions (1.1.1):
+  - RNAnalyticsIntegration-Amplitude (0.1.0-beta.0):
+    - Analytics
     - React
-  - RNGestureHandler (1.2.1):
+    - Segment-Amplitude
+  - RNAnalyticsIntegration-Firebase (0.1.0-beta.0):
+    - Analytics
     - React
-  - RNGoogleSignin (2.0.0):
-    - GoogleSignIn (~> 4.4.0)
+    - Segment-Firebase
+  - RNDeviceInfo (1.8.0):
     - React
-  - RNIap (2.5.1):
+  - RNKeychain (3.0.0):
     - React
-  - RNImageCropPicker (0.24.0):
-    - QBImagePickerController
+  - RNSound (0.10.9):
     - React/Core
-    - RSKImageCropper
-  - RNVectorIcons (6.4.2):
+    - RNSound/Core (= 0.10.9)
+  - RNSound/Core (0.10.9):
+    - React/Core
+  - RNSVG (6.5.2):
     - React
-  - RSKImageCropper (2.2.1)
-  - WebEngage (4.6.0):
-    - WebEngage/Xcode10 (= 4.6.0)
-  - WebEngage/Xcode10 (4.6.0)
-  - yoga (0.59.3.React)
+  - RNVectorIcons (5.0.0):
+    - React
+  - SDWebImage/Core (4.4.7)
+  - SDWebImage/GIF (4.4.7):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SDWebImage/WebP (4.4.7):
+    - libwebp (< 2.0, >= 0.5)
+    - SDWebImage/Core
+  - Segment-Amplitude (2.0.0):
+    - Amplitude-iOS (~> 4.0)
+    - Analytics (~> 3.6)
+  - Segment-Firebase (2.4.0):
+    - Analytics (~> 3.2)
+    - Firebase/Core (~> 5.0)
+    - Segment-Firebase/Core (= 2.4.0)
+  - Segment-Firebase/Core (2.4.0):
+    - Analytics (~> 3.2)
+    - Firebase/Core (~> 5.0)
+  - Sentry (4.0.1):
+    - Sentry/Core (= 4.0.1)
+  - Sentry/Core (4.0.1)
+  - SentryReactNative (0.39.0):
+    - React
+    - Sentry (~> 4.0.1)
+  - TextToSpeech (2.0.0):
+    - React
+  - WebEngage (4.9.1):
+    - WebEngage/Xcode10 (= 4.9.1)
+  - WebEngage/Xcode10 (4.9.1)
+  - yoga (0.57.1.React)
 
 DEPENDENCIES:
-  - Crashlytics (~> 3.12.0)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
-  - Fabric (~> 1.9.0)
-  - Firebase/Auth (~> 5.20.1)
-  - Firebase/Core (~> 5.20.1)
-  - Firebase/DynamicLinks (~> 5.20.1)
-  - Firebase/Firestore (~> 5.20.1)
-  - Firebase/Messaging (~> 5.20.1)
-  - Firebase/Storage (~> 5.20.1)
+  - Firebase/Core (~> 5.11.0)
+  - Firebase/Messaging (~> 5.11.0)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
-  - glog (from `../node_modules/react-native/third-party-podspecs/GLog.podspec`)
+  - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - react-native-fast-image (from `../node_modules/react-native-fast-image`)
+  - react-native-photo-view (from `../node_modules/react-native-photo-view`)
+  - react-native-webview (from `../node_modules/react-native-webview`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
+  - React/cxxreact (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
+  - React/jschelpers (from `../node_modules/react-native`)
   - React/RCTActionSheet (from `../node_modules/react-native`)
   - React/RCTAnimation (from `../node_modules/react-native`)
   - React/RCTGeolocation (from `../node_modules/react-native`)
   - React/RCTImage (from `../node_modules/react-native`)
-  - React/RCTLinkingIOS (from `../node_modules/react-native`)
   - React/RCTNetwork (from `../node_modules/react-native`)
-  - React/RCTSettings (from `../node_modules/react-native`)
   - React/RCTText (from `../node_modules/react-native`)
-  - React/RCTVibration (from `../node_modules/react-native`)
   - React/RCTWebSocket (from `../node_modules/react-native`)
-  - ReactNativeFabric (from `../node_modules/react-native-fabric`)
-  - ReactNativePermissions (from `../node_modules/react-native-permissions`)
-  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
-  - RNGoogleSignin (from `../node_modules/react-native-google-signin`)
-  - RNIap (from `../node_modules/react-native-iap`)
-  - RNImageCropPicker (from `../node_modules/react-native-image-crop-picker`)
+  - "RNAnalytics (from `../node_modules/@segment/analytics-react-native`)"
+  - "RNAnalyticsIntegration-Amplitude (from `../node_modules/@segment/analytics-react-native-amplitude`)"
+  - "RNAnalyticsIntegration-Firebase (from `../node_modules/@segment/analytics-react-native-firebase`)"
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
+  - RNKeychain (from `../node_modules/react-native-keychain`)
+  - RNSound (from `../node_modules/react-native-sound`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
+  - SentryReactNative (from `../node_modules/react-native-sentry`)
+  - TextToSpeech (from `../node_modules/react-native-tts`)
   - WebEngage
-  - yoga (from `../node_modules/react-native/ReactCommon/yoga/Yoga.podspec`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Amplitude-iOS
+    - Analytics
     - boost-for-react-native
-    - BoringSSL-GRPC
-    - Crashlytics
-    - Fabric
     - Firebase
     - FirebaseAnalytics
     - FirebaseAnalyticsInterop
-    - FirebaseAuth
-    - FirebaseAuthInterop
     - FirebaseCore
-    - FirebaseDynamicLinks
-    - FirebaseFirestore
     - FirebaseInstanceID
     - FirebaseMessaging
-    - FirebaseStorage
+    - FLAnimatedImage
     - GoogleAppMeasurement
-    - GoogleSignIn
-    - GoogleToolboxForMac
     - GoogleUtilities
-    - "gRPC-C++"
-    - gRPC-Core
-    - GTMSessionFetcher
-    - leveldb-library
+    - libwebp
     - nanopb
     - Protobuf
-    - QBImagePickerController
-    - RSKImageCropper
+    - SDWebImage
+    - Segment-Amplitude
+    - Segment-Firebase
+    - Sentry
     - WebEngage
 
 EXTERNAL SOURCES:
@@ -302,68 +262,78 @@ EXTERNAL SOURCES:
   Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
   glog:
-    :podspec: "../node_modules/react-native/third-party-podspecs/GLog.podspec"
+    :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
-  ReactNativeFabric:
-    :path: "../node_modules/react-native-fabric"
-  ReactNativePermissions:
-    :path: "../node_modules/react-native-permissions"
-  RNGestureHandler:
-    :path: "../node_modules/react-native-gesture-handler"
-  RNGoogleSignin:
-    :path: "../node_modules/react-native-google-signin"
-  RNIap:
-    :path: "../node_modules/react-native-iap"
-  RNImageCropPicker:
-    :path: "../node_modules/react-native-image-crop-picker"
+  react-native-fast-image:
+    :path: "../node_modules/react-native-fast-image"
+  react-native-photo-view:
+    :path: "../node_modules/react-native-photo-view"
+  react-native-webview:
+    :path: "../node_modules/react-native-webview"
+  RNAnalytics:
+    :path: "../node_modules/@segment/analytics-react-native"
+  RNAnalyticsIntegration-Amplitude:
+    :path: "../node_modules/@segment/analytics-react-native-amplitude"
+  RNAnalyticsIntegration-Firebase:
+    :path: "../node_modules/@segment/analytics-react-native-firebase"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
+  RNKeychain:
+    :path: "../node_modules/react-native-keychain"
+  RNSound:
+    :path: "../node_modules/react-native-sound"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
+  SentryReactNative:
+    :path: "../node_modules/react-native-sentry"
+  TextToSpeech:
+    :path: "../node_modules/react-native-tts"
   yoga:
-    :path: "../node_modules/react-native/ReactCommon/yoga/Yoga.podspec"
+    :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  Amplitude-iOS: ac1715ae68104b7a51723209ad574f60ab22ae5f
+  Analytics: 63744ad4afa65c3bcdcdb7a94b62515bde5b3900
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
-  BoringSSL-GRPC: 2a230d9cd93e7ce39916044f645cebb31f37dde6
-  Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
   DoubleConversion: bb338842f62ab1d708ceb63ec3d999f0f3d98ecd
-  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
-  Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
-  FirebaseAnalytics: ece1aa57a4f43c64d53a648b5a5e05151aae947b
+  Firebase: b48f9e653da971ecce5b8c749684bc8bb2d26bd3
+  FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
   FirebaseAnalyticsInterop: efbe45c8385ec626e29f9525e5ebd38520dfb6c1
-  FirebaseAuth: dd7bbf03a5aee0eafb3a1aee4d2812bd74bac890
-  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
-  FirebaseCore: f1a9a8be1aee4bf71a2fc0f4096df6788bdfda61
-  FirebaseDynamicLinks: f7a8717e2c7ea652923882a2d60b0045d6fd99d5
-  FirebaseFirestore: faca891c0f0d1d6c10c793473e2f6a29d75014b5
-  FirebaseInstanceID: a122b0c258720cf250551bb2bedf48c699f80d90
-  FirebaseMessaging: 4235f949ce1c4e827aeb19705ba5c53f9b85aa10
-  FirebaseStorage: 6162ef4322502b818d9de0ec552f5226d283de43
-  Folly: de497beb10f102453a1afa9edbf8cf8a251890de
-  glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
+  FirebaseCore: d16552f06821489ce1affe2e5e3e5593402ddfe3
+  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FirebaseMessaging: 0f14a264b0d7f867e8eff5d3556bc5d0d4e57888
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Folly: c89ac2d5c6ab169cd7397ef27485c44f35f742c7
+  glog: e8acf0ebbf99759d3ff18c86c292a5898282dcde
   GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
-  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
-  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
-  "gRPC-C++": e76441995900ac90e9bd98644ab4733f12521edf
-  gRPC-Core: 4028031ed2c5267cca0d846c876d8046b1ecb9b6
-  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
-  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  libwebp: b068a3bd7c45f7460f6715be7bed1a18fd5d6b48
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
-  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
-  React: b52fdb80565505b7e4592b313a38868f5df51641
-  ReactNativeFabric: d05320ff347d5c72567c115b97edeead111ac4d2
-  ReactNativePermissions: 2e324bb3baf12702e3ec27f76c8ae1158fa69fc6
-  RNGestureHandler: aea90f0ad8e35fec23438db6fc3ad79be58bb734
-  RNGoogleSignin: d030c6c6591db24c3cee649f64c7babf0a1699a0
-  RNIap: 05c88784a35ca11f8974ac5e081e0cb6c4c577e6
-  RNImageCropPicker: 1f22116cbcee5c66f0dea776eb114269afd91b90
-  RNVectorIcons: 6607bd3a30291d0edb56f9bbe7ae411ee2b928b0
-  RSKImageCropper: 98296ad26b41753f796b6898d015509598f13d97
-  WebEngage: 122738dc25a70f81fb811f8449ad26495cf13f4b
-  yoga: 1a492113f66a35e9e583bb0434f4b8cc668dd839
+  Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
+  React: b4e0982b0ed6a7de90e96cf6fe5cf036aeadd1ec
+  react-native-fast-image: 7278563726f2455ed3ba6e04dea472345173278c
+  react-native-photo-view: 63e9e61da873531f931008b545d8d10c5373ddf8
+  react-native-webview: 69ca34f590814ae44260d30e293ab4b7b3eea793
+  RNAnalytics: 5c242b7f8117f108f5df71e96b908185db3fb4ee
+  RNAnalyticsIntegration-Amplitude: e7756c2a9288cc89036fccd76edf9fd198beea83
+  RNAnalyticsIntegration-Firebase: 1ff67172d2063f4248d176f0a96252ef3ef3a47c
+  RNDeviceInfo: 9e6a0aece8e7455515103ce23372b393843a7ee7
+  RNKeychain: 3aa3cf891a09a0d18d306862ab2bb9e106079b24
+  RNSound: 24fa73ccfa6236a0b493e3f4bf3c952028dc3ce2
+  RNSVG: 3c037ade1c42014de732e27e3879bf2b77ea78ea
+  RNVectorIcons: f066f73bf4f25564d7ee7b1bb150e3b431f3a194
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  Segment-Amplitude: bef43d0ec5c2986fe50c1e534e3d4db0171867f4
+  Segment-Firebase: cac4b742228ef74d50ed886f3fc731e4bc8b7d29
+  Sentry: a38f7879924c02239e121b19d993d23bdd1684db
+  SentryReactNative: 0dc14d9821b62658796882a954dc67dd2f175d29
+  TextToSpeech: 4e2fc50c7495416c6da5a1662ad3f750c58d3c85
+  WebEngage: b77d3bc788974bd978354df4554a49481bee825f
+  yoga: 5e2e4bcf11188977f799b64625dc5913c2aea8fd
 
-PODFILE CHECKSUM: ce8e1aa03473686bedde6e437fea1aad9ca7b788
+PODFILE CHECKSUM: b4b74998895e1b78892dedcc0d23b7b8784258cd
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.2

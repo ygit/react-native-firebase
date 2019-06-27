@@ -3,57 +3,108 @@ platform :ios, '10.0'
 
 target 'RNFirebaseStarter' do
 
-  pod 'Firebase/Core', '~> 5.20.1'
-  pod 'Firebase/Firestore', '~> 5.20.1'
-  pod 'Firebase/Auth', '~> 5.20.1'
-  pod 'Firebase/Storage', '~> 5.20.1'
-  pod 'Firebase/Messaging', '~> 5.20.1'
-  pod 'Firebase/DynamicLinks', '~> 5.20.1'
-
-  pod 'RNGoogleSignin', :path => '../node_modules/react-native-google-signin'
-  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+  pod 'React', path: '../node_modules/react-native', :subspecs => [
     'Core',
+    'jschelpers',
+    'cxxreact',
     'CxxBridge',
     'DevSupport',
-    # the following ones are the ones taken from "Libraries" in Xcode:
+    'RCTText',
+    'RCTImage',
+    'RCTNetwork',
     'RCTActionSheet',
     'RCTAnimation',
+    'RCTWebSocket',
     'RCTGeolocation',
-    'RCTImage',
-    'RCTLinkingIOS',
-    'RCTNetwork',
-    'RCTSettings',
-    'RCTText',
-    'RCTVibration',
-    'RCTWebSocket'
   ]
-
-  platform :ios, '10.0'
-  # the following dependencies are dependencies of React native itself.
-  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+  pod 'yoga', path: '../node_modules/react-native/ReactCommon/yoga'
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
-  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
 
-  # Other deps
-  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
-  pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+  pod 'RNKeychain', :path => '../node_modules/react-native-keychain'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
-  pod 'RNIap', :path => '../node_modules/react-native-iap'
-  pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
-  pod 'ReactNativeFabric', :path => '../node_modules/react-native-fabric'
-  pod 'Fabric', '~> 1.9.0'
-  pod 'Crashlytics', '~> 3.12.0'
+
+  pod 'SentryReactNative', :path => '../node_modules/react-native-sentry'
+
+  pod 'TextToSpeech', :path => '../node_modules/react-native-tts'
+
+  pod 'react-native-fast-image', :path => '../node_modules/react-native-fast-image'
+
+  pod 'RNSound', :path => '../node_modules/react-native-sound'
+
+  pod 'Firebase/Core', '~> 5.11.0'
+
+  pod 'Firebase/Messaging', '~> 5.11.0'
+
+  pod 'react-native-webview', :path => '../node_modules/react-native-webview'
+
+  pod 'react-native-photo-view', :path => '../node_modules/react-native-photo-view'
+
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
+  pod 'RNAnalytics', :path => '../node_modules/@segment/analytics-react-native'
+
+  pod 'RNAnalyticsIntegration-Firebase', :path => '../node_modules/@segment/analytics-react-native-firebase'
+
+  pod 'RNAnalyticsIntegration-Amplitude', :path => '../node_modules/@segment/analytics-react-native-amplitude'
+
   pod 'WebEngage'
 
+  # pod 'Firebase/Core', '~> 5.20.1'
+  # pod 'Firebase/Firestore', '~> 5.20.1'
+  # pod 'Firebase/Auth', '~> 5.20.1'
+  # pod 'Firebase/Storage', '~> 5.20.1'
+  # pod 'Firebase/Messaging', '~> 5.20.1'
+  # pod 'Firebase/DynamicLinks', '~> 5.20.1'
+  #
+  # pod 'RNGoogleSignin', :path => '../node_modules/react-native-google-signin'
+  # pod 'React', :path => '../node_modules/react-native', :subspecs => [
+  #   'Core',
+  #   'CxxBridge',
+  #   'DevSupport',
+  #   # the following ones are the ones taken from "Libraries" in Xcode:
+  #   'RCTActionSheet',
+  #   'RCTAnimation',
+  #   'RCTGeolocation',
+  #   'RCTImage',
+  #   'RCTLinkingIOS',
+  #   'RCTNetwork',
+  #   'RCTSettings',
+  #   'RCTText',
+  #   'RCTVibration',
+  #   'RCTWebSocket'
+  # ]
+  #
+
+  # # the following dependencies are dependencies of React native itself.
+  # pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+  # pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  # pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  # pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
+  #
+  # # Other deps
+  # pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+  # pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+  # pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+  # pod 'RNIap', :path => '../node_modules/react-native-iap'
+  # pod 'ReactNativePermissions', :path => '../node_modules/react-native-permissions'
+  # pod 'ReactNativeFabric', :path => '../node_modules/react-native-fabric'
+  # pod 'Fabric', '~> 1.9.0'
+  # pod 'Crashlytics', '~> 3.12.0'
+  # pod 'WebEngage'
+
 end
 
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    targets_to_ignore = %w(React yoga)
-
-    if targets_to_ignore.include? target.name
-      target.remove_from_project
-    end
-  end
-end
+# post_install do |installer|
+#   installer.pods_project.targets.each do |target|
+#     targets_to_ignore = %w(React yoga)
+#
+#     if targets_to_ignore.include? target.name
+#       target.remove_from_project
+#     end
+#   end
+# end
