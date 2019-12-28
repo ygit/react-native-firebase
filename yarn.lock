@@ -1580,10 +1580,10 @@ commander@~2.13.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
   integrity sha512-MVuS359B+YzaWqjCL/c+22gfryv+mCBPHAv3zyVI2GN8EY6IRP8VwtasXn8jyyhvvq84R4ImN1OKRtcbIasjYA==
 
-commander@~2.19.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.19.0.tgz#f6198aa84e5b83c46054b94ddedbfed5ee9ff12a"
-  integrity sha512-6tvAOO+D6OENvRAh524Dh9jcfKTYDQAqvqezbCW82xj5X0pSrcpxtvRKHLG0yBY6SD7PSDrJaj+0AiOcKVd1Xg==
+commander@~2.20.3:
+  version "2.20.3"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
+  integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
 
 commondir@^1.0.1:
   version "1.0.1"
@@ -1872,11 +1872,9 @@ domexception@^1.0.1:
     webidl-conversions "^4.0.2"
 
 dooboolab-welcome@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/dooboolab-welcome/-/dooboolab-welcome-1.1.0.tgz#4a0aa9d2cbc4e2b1008bf7683bc056b41caa3d0d"
-  integrity sha512-K9TKEeefzDXZiUyLZG+bIr8cy9UoYIfFMseowp/o3czVl7TfkVm3gQpeB85w+TO8xeqzWHiIcEelZbBgt5WUwQ==
-  dependencies:
-    chalk "^2.4.1"
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/dooboolab-welcome/-/dooboolab-welcome-1.1.1.tgz#ca2184f6e1f568865d707a6ce3bda7e003550f54"
+  integrity sha512-tQ/9NBCGnalHwKOBjDqTD4t4wQpDfSSbxQGctzkzaLHR3AhN0wCBkIs05JciVtvl/jfLZ+DgAndktAMk3Bu7Vw==
 
 ecc-jsbn@~0.1.1:
   version "0.1.2"
@@ -2509,10 +2507,15 @@ growly@^1.3.0:
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
 
+hammerjs@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
+  integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
+
 handlebars@^4.1.0:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.1.1.tgz#6e4e41c18ebe7719ae4d38e5aca3d32fa3dd23d3"
-  integrity sha512-3Zhi6C0euYZL5sM0Zcy7lInLXKQ+YLcF/olbN010mzGQ4XVm50JeyBnMqofHh696GrciGruC7kCcApPDJvVgwA==
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.3.tgz#5cf75bd8714f7605713511a56be7c349becb0482"
+  integrity sha512-3yPecJoJHK/4c6aZhSvxOyG4vJKDshV36VHp0iVCDVh7o9w2vwi3NSnL2MMPj3YdduqaBcu7cGbggJQM0br9xA==
   dependencies:
     neo-async "^2.6.0"
     optimist "^0.6.1"
@@ -3670,10 +3673,15 @@ lodash.throttle@^4.1.1:
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
-lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.6.1:
+lodash@^4.0.0:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+
+lodash@^4.17.11, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.6.1:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
   version "1.4.0"
@@ -4289,9 +4297,9 @@ negotiator@0.6.1:
   integrity sha1-KzJxhOiZIQEXeyhWP7XnECrNDKk=
 
 neo-async@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
-  integrity sha512-MFh0d/Wa7vkKO3Y3LlacqAEeHK0mckVqzDieUKTT+KGxi+zIpeVsFxymkIiRpbpDziHc290Xr9A1O4Om7otoRA==
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
+  integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
 nice-try@^1.0.4:
   version "1.0.5"
@@ -4846,7 +4854,7 @@ prompts@^2.0.1:
     kleur "^3.0.2"
     sisteransi "^1.0.0"
 
-prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.2:
+prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -4949,18 +4957,19 @@ react-native-firebase@^5.3.1:
     prop-types "^15.6.2"
 
 react-native-gesture-handler@^1.2.1:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.3.0.tgz#d0386f565928ccc1849537f03f2e37fd5f6ad43f"
-  integrity sha512-ASRFIXBuKRvqlmwkWJhV8yP2dTpvcqVrLNpd7FKVBFHYWr6SAxjGyO9Ik8w1lAxDhMlRP2IcJ9p9eq5X2WWeLQ==
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.5.2.tgz#281111550bf1eee10b7feba5278d142169892731"
+  integrity sha512-Xp03dq4XYVTD0xmWx4DW4eX+ox1NQLjHmbykspTdS5FCNIVIOekVXRLFCw1698/v8dYUHApNo6K3s3BCD8fqPA==
   dependencies:
+    hammerjs "^2.0.8"
     hoist-non-react-statics "^2.3.1"
-    invariant "^2.2.2"
-    prop-types "^15.5.10"
+    invariant "^2.2.4"
+    prop-types "^15.7.2"
 
 react-native-google-signin@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-google-signin/-/react-native-google-signin-2.0.0.tgz#0d9cb128a65c0b48216716b979c1ada35900ceb0"
-  integrity sha512-9loM4lcCIdbco5BnmNio7yGaXQKCpCaY1VRmYiTSvC5NjuSf6Ui6jZRee46p/YdaU4yRnS3u5Vct6Psrvr0HNg==
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/react-native-google-signin/-/react-native-google-signin-2.1.1.tgz#4281940eee88602b0181dd49affdf8c92980c85c"
+  integrity sha512-6l3fiLdX/bfhh0BoxGq+jGkagFsO+mrE/eRV4+3/0k8+FDxO90vdPpQdDiwlM5vWXRxWthTzMM09/jHw+4cvNw==
 
 react-native-iap@^2.5.1:
   version "2.5.5"
@@ -4975,9 +4984,9 @@ react-native-image-crop-picker@^0.24.0:
   integrity sha512-M+6iFhDXPDtf++X+fvb5mKkLw2978SbyPVVQHigktgKONxtTZtBiOOtYfBUIkPaSetP20P9q4iwOu+iTaZ/R+w==
 
 react-native-permissions@^1.1.1:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-1.2.0.tgz#0deb616bf1565c17c91f1cb1f953809b2892c29e"
-  integrity sha512-+KrP1JZ30RI9p30wsGlGQx22qwiClDnznSQZPpvBMkOIZQ9kXOkLAFXS+vwiHRiiRu/pBMBXYHfI7ng6t2+LbQ==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-permissions/-/react-native-permissions-1.2.1.tgz#cb1f6e53b8992b3912de5a4cfc1553ac2e82d0f6"
+  integrity sha512-6NOGsA7EsuKT9hfULccQfMrsGmRhBkmN6Uv8nz2QObjEG87XtroQtw4Qi1+tAjIkSHawCeAMJp+SCtiXSGUD5Q==
 
 react-native-vector-icons@^6.4.2:
   version "6.6.0"
@@ -5998,11 +6007,11 @@ uglify-es@^3.1.9:
     source-map "~0.6.1"
 
 uglify-js@^3.1.4:
-  version "3.5.3"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.5.3.tgz#d490bb5347f23025f0c1bc0dee901d98e4d6b063"
-  integrity sha512-rIQPT2UMDnk4jRX+w4WO84/pebU2jiLsjgIyrCktYgSvx28enOE3iYQMr+BD1rHiitWnDmpu0cY/LfIEpKcjcw==
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.7.3.tgz#f918fce9182f466d5140f24bb0ff35c2d32dcc6a"
+  integrity sha512-7tINm46/3puUA4hCkKYo4Xdts+JDaVC9ZPRcG8Xw9R4nhO/gZgUM3TENq8IF4Vatk8qCig4MzP/c8G4u2BkVQg==
   dependencies:
-    commander "~2.19.0"
+    commander "~2.20.3"
     source-map "~0.6.1"
 
 ultron@1.0.x:
